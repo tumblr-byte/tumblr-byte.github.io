@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Showcase Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<div style="display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
+  <a href="index.html" style="text-decoration:none; color:#12503F; font-size:28px; margin-right:15px;">
+    <i class="fa-solid fa-angle-left"></i>
+  </a>
+  <h1 style="margin:0;">Projects Showcase</h1>
+</div>
+
+
+  <div class="carousel-container">
+    <button class="carousel-btn left"><i class="fa-solid fa-angle-left"></i></button>
+    <div class="carousel-track">
+
+      <!-- Project 1 -->
+      <div class="project">
+        <h2>Person Detection & Tracking</h2>
+        <video src="person.mp4" controls muted></video>
+        <p>
+    This project uses computer vision and AI to automatically detect people in a video stream and track their movement in real time. 
+    It can identify when and where people enter or leave, follow their paths, and count the number of individuals present.
+  </p>
+        <button class="btn" onclick="openModal('modal1')">View</button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <h2>Face Mask Detection</h2>
+        <video src="face_mask.mp4" controls muted></video>
+        <p>
+    This project uses deep learning and computer vision to detect whether a person is wearing a face mask properly, improperly, or not wearing one at all. 
+    It works in real time on video streams from CCTV or cameras.
+  </p>
+        <button class="btn" onclick="openModal('modal2')">View</button>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project">
+        <h2>Yoga Pose Detection</h2>
+        <video src="yoga.mp4" controls muted></video>
+         <p>
+    This project uses computer vision and deep learning to detect human postures in real time and classify them into specific yoga poses 
+    such as Downward Dog, Warrior, Tree Pose, and more. The system provides instant feedback on correctness of posture and improvements needed.
+  </p>
+        <button class="btn" onclick="openModal('modal3')">View</button>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project">
+        <h2>Vehicle Detection & Number Plate</h2>
+        <video src="car.mp4" controls muted></video>
+        <p>
+    This project uses computer vision to detect multiple types of vehicles such as cars, motorcycles, and trucks in real time. 
+    After detection, the system extracts the number plate (license plate) and recognizes the characters, displaying them automatically.
+  </p>
+        <button class="btn" onclick="openModal('modal4')">View</button>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project">
+        <h2>Emotion Fun Playlist</h2>
+        <video src="emotions.mp4" controls muted></video>
+       <p>
+     I built a simple prototype that connects computer vision with personalized music.
+The system detects a “happy” expression from an uploaded image
+If happy is detected → it shows a button that opens a matching Spotify playlist
+(This can also be extended to live video feeds and more emotions)
+
+  </p>
+        <button class="btn" onclick="openModal('modal5')">View</button>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project">
+        <h2>Emotion Detection</h2>
+        <video src="emotion.mp4" controls muted></video>
+       <p>
+    
+    I developed a system that can detect emotions such as:
+Happy 🙂
+Sad 😔
+Angry 😡
+  </p>
+        <button class="btn" onclick="openModal('modal6')">View</button>
+      </div>
+
+    </div>
+    <button class="carousel-btn right"><i class="fa-solid fa-angle-right"></i></button>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+      <h2>Person Detection & Tracking</h2>
+      <video src="person.mp4" controls autoplay></video>
+      <p>
+    This project uses computer vision and AI to automatically detect people in a video stream and track their movement in real time. 
+    It can identify when and where people enter or leave, follow their paths, and count the number of individuals present.
+  </p>
+  <p><strong>Business Benefits:</strong></p>
+  <ul style="text-align:left;">
+    <li><strong>Retail Analytics:</strong> Measure foot traffic, understand customer movement patterns, and optimize product placement.</li>
+    <li><strong>Security & Surveillance:</strong> Monitor restricted areas, detect intrusions, and alert security teams.</li>
+    <li><strong>Event Management:</strong> Track crowd density in real time for safety in large gatherings.</li>
+    <li><strong>Smart Workplaces:</strong> Monitor workspace occupancy to optimize layouts and energy usage.</li>
+    <li><strong>Transportation Hubs:</strong> Analyze crowd flow at airports, stations, and bus terminals to reduce congestion.</li>
+  </ul>
+  Video credit: Pexels
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+      <h2>Face Mask Detection</h2>
+      <video src="face_mask.mp4" controls autoplay></video>
+       <p>
+    This project uses deep learning and computer vision to detect whether a person is wearing a face mask properly, improperly, or not wearing one at all. 
+    It works in real time on video streams from CCTV or cameras.
+  </p>
+  <p><strong>Business Benefits:</strong></p>
+  <ul style="text-align:left;">
+    <li><strong>Health & Safety Compliance:</strong> Ensures people follow mask-wearing rules in public spaces, offices, and factories.</li>
+    <li><strong>Workplace Safety:</strong> Protects employees in high-risk areas by monitoring mask usage.</li>
+    <li><strong>Public Transportation:</strong> Enforces mask policies in buses, trains, and airports automatically.</li>
+    <li><strong>Healthcare Facilities:</strong> Helps hospitals maintain infection control by checking visitors and staff.</li>
+    <li><strong>Retail & Malls:</strong> Provides an automated solution to ensure customer safety and compliance with regulations.</li>
+  </ul>
+  Video credit: Pexels
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+      <h2>Yoga Pose Detection</h2>
+      <video src="yoga.mp4" controls autoplay></video>
+      <p>
+    This project uses computer vision and deep learning to detect human postures in real time and classify them into specific yoga poses 
+    such as Downward Dog, Warrior, Tree Pose, and more. The system provides instant feedback on correctness of posture and improvements needed.
+  </p>
+  <p><strong>Business Benefits:</strong></p>
+  <ul style="text-align:left;">
+    <li><strong>Fitness Apps & Platforms:</strong> Enables interactive yoga training by giving users real-time posture correction.</li>
+    <li><strong>Health & Wellness Industry:</strong> Helps gyms, studios, and trainers monitor student performance remotely.</li>
+    <li><strong>Home Training:</strong> Provides individuals with an AI-based yoga instructor for guided practice.</li>
+    <li><strong>Rehabilitation & Therapy:</strong> Assists physiotherapists in ensuring patients perform poses safely and correctly.</li>
+    
+  </ul>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+      <h2>Vehicle Detection & Number Plate Recognition</h2>
+      <video src="car.mp4" controls autoplay></video>
+       <p>
+    This project uses computer vision to detect multiple types of vehicles such as cars, motorcycles, and trucks in real time. 
+    After detection, the system extracts the number plate (license plate) and recognizes the characters, displaying them automatically.
+  </p>
+  <p><strong>Business Benefits:</strong></p>
+  <ul style="text-align:left;">
+    <li><strong>Traffic Management:</strong> Monitor traffic flow and identify vehicle types in real time.</li>
+    <li><strong>Law Enforcement:</strong> Automatically detect and log number plates for speeding, red-light violations, or stolen vehicles.</li>
+    <li><strong>Toll Collection:</strong> Enable automated toll booths without requiring manual checks.</li>
+    <li><strong>Parking Systems:</strong> Manage smart parking lots by logging vehicle entry and exit with license plate recognition.</li>
+    <li><strong>Fleet Management:</strong> Track commercial vehicles for logistics and transportation companies.</li>
+  </ul>
+  Video credit: Pexels
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+      <h2>Emotion Fun Playlist</h2>
+      <video src="emotions.mp4" controls autoplay></video>
+       <p>
+   I built a simple prototype that connects computer vision with personalized music.
+The system detects a “happy” expression from an uploaded image
+If happy is detected → it shows a button that opens a matching Spotify playlist
+(This can also be extended to live video feeds and more emotions)
+
+ls
+
+  </p>
+  <p><strong></strong> This is an early experiment, but it’s exciting to see how AI can bridge emotions and music experiences.</p>
+     Video credit: Pexe
+    </div>
+  </div>
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+      <h2>Emotion Detection</h2>
+      <video src="emotion.mp4" controls autoplay></video>
+       <p>
+    This project uses deep learning and facial expression analysis to detect and classify human emotions in real time. 
+    The system can identify emotions such as Happiness, Sadness, Anger, Surprise, Fear, and Neutral states.
+  </p>
+  <p><strong>Business Benefits:</strong></p>
+  <ul style="text-align:left;">
+    <li><strong>Customer Experience:</strong> Businesses can analyze customer emotions in retail or service environments to improve satisfaction.</li>
+    <li><strong>E-Learning:</strong> Track student engagement and emotions during online classes for adaptive teaching.</li>
+    <li><strong>Healthcare:</strong> Monitor patients’ emotional states for mental health assessment and therapy.</li>
+    <li><strong>Human-Computer Interaction:</strong> Build emotionally intelligent apps, chatbots, and virtual assistants.</li>
+    <li><strong>Entertainment:</strong> Analyze audience reactions to movies, games, or advertisements in real time.</li>
+  </ul>
+  Video credit: Pexe
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="project.js"></script>
+
+</body>
+</html>
