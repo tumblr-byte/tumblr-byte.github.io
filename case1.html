@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Case Study</title>
+  <link rel="stylesheet" href="case1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-footer">
+    <h1>Case Study: Smart Video Analytics for Hospital Safety & Efficiency</h1>
+    <div class="dropdown-wrapper">
+      <i class="fa-regular fa-square-caret-down dropdown-icon" id="dropdownToggle"></i>
+      <div class="dropdown" id="dropdownMenu">
+      <button onclick="location.href='case.html'">Boosting Mall Efficiency with Footfall Analytics</button>
+        <button onclick="location.href='case1.html'">Smart Video Analytics for Hospital Safety & Efficiency</button>
+        <button onclick="location.href='case3.html'">Industries Management</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="content">
+
+    <section class="card">
+      <h2>Client Profile</h2>
+      <p>A large private hospital in India with multiple specialty departments, 300+ beds, ICU units, and daily footfall of patients, visitors, and staff.</p>
+    </section>
+
+    <section class="card">
+      <h2>Business Challenges</h2>
+      <ul>
+        <li>Hospital lobby overcrowded during OPD hours made patient management difficult.</li>
+        <li>No real-time system to detect patient/visitor fainting or falls.</li>
+        <li>Ensuring staff PPE (masks, gowns, gloves) compliance in ICU/OT zones.</li>
+        <li>Visitors sometimes entered ICU without masks, increasing infection risk.</li>
+        <li>Management required proof of safety compliance for audits and accreditation.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>AI Solutions Implemented</h2>
+
+      <div class="video-block">
+        <h3>Crowd Density & People Counting</h3>
+        <p>Real-time counting in lobby, OPD halls, and corridors. Heatmaps optimized staffing and space.</p>
+        <div class="video-container">
+          <video controls>
+            <source src="person.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-block">
+        <h3>Fall Detection in Public Areas</h3>
+        <p>AI detects sudden falls & sends instant alerts to staff, reducing emergency response times.</p>
+        <div class="video-container">
+          <video controls>
+            <source src="fall.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-block">
+        <h3>PPE Monitoring (Staff)</h3>
+        <p>AI ensures doctors, nurses, and staff wear PPE inside ICU/OT/nursing zones.</p>
+        <div class="video-container">
+          <video controls>
+            <source src="ppe.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-block">
+        <h3>Mask Compliance for Visitors</h3>
+        <p>System checks mask usage in ICU/public zones; can be enabled per hospital policy.</p>
+        <div class="video-container">
+          <video controls>
+            <source src="face_mask.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Key Findings (Demo Insights)</h2>
+      <ul>
+        <li>Lobby density peaked between <b>9–11 AM</b> and <b>6–8 PM</b>.</li>
+        <li>Fall detection reduced incident response time by <b>over 50%</b>.</li>
+        <li>PPE compliance improved from <b>78% → 96%</b>.</li>
+        <li>Visitor mask compliance improved by <b>30%</b>.</li>
+      </ul>
+      <div class="graph-grid">
+        <img src="lobby_density_chart.png" alt="Lobby Density Graph">
+       
+         <img src="fall_response.png" alt="Fall Response Time Graph">
+         <img src="ppe_compliance_chart.png" alt="PPE Compliance Chart">
+        <img src="mask_compliance_chart.png" alt="Mask Compliance Chart">
+
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Business Benefits</h2>
+      <ul>
+        <li>Improved patient safety with faster response to falls.</li>
+        <li>Stronger infection control through PPE and visitor mask monitoring.</li>
+        <li>Operational efficiency by optimizing staff allocation.</li>
+        <li>Accreditation-ready reports for NABH/JCI audits.</li>
+        <li>Cost-effective as it works with existing CCTV infrastructure.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Next Steps for Hospitals</h2>
+      <ul>
+        <li>Begin with lobby + ICU monitoring, then expand coverage.</li>
+        <li>Integrate alerts with hospital security app or WhatsApp group.</li>
+        <li>Leverage reports for monthly management and compliance audits.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="header-footer">
+    <p>&copy; 2025 Hospital AI Case Study</p>
+  </footer>
+
+  <script src="case1.js"></script>
+</body>
+</html>
